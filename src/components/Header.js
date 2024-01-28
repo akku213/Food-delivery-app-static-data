@@ -2,9 +2,12 @@ import { useState } from 'react';
 import Logo from '../../images/logo.png';
 import resList from '../utils/mockData';
 import RestaurantCard from "./RestaurantCard";
+import { Link } from 'react-router-dom';
+import useOnlineStatus from '../utils/useOnlineStatus';
 
 const Header = ({ onSearch }) => {
     const [searchText, setSearchText] = useState("");
+    const onlineStatus = useOnlineStatus();
     let [btnNameReact, setbtnNameReact] = useState("Login");
     const handleSearch = () => {
       onSearch(searchText);
@@ -36,9 +39,10 @@ const Header = ({ onSearch }) => {
             </div>
             <div className='nav-items'>
                 <ul>
-                    <li>Home</li>
-                    <li>About Us</li>
-                    <li>Contact</li>
+                    <li>{onlineStatus ? "Online:🟢" : "Offline:🔴"}</li>
+                    <li><Link to="/">Home</Link></li>
+                    <li><Link to="/about">About Us</Link></li>
+                    <li><Link to="/help" >Help</Link></li>
                     <li>Cart</li>
                     <button className='login' 
                     onClick={()=>{ 

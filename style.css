@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 *{
     margin: 0px;
     padding: 0px;
@@ -24,7 +25,10 @@
 
 .nav-items ul li{
     margin: 0px 20px;
+    /* color: rgb(33, 37, 41); */
 }
+
+  
 
 .search-container{
     background-color: #F0F0F5;
@@ -40,21 +44,88 @@
     border-radius: 15px;
     width:200px;
     margin-top: 20px;
-    padding: 10px;
     margin: 20px;
-    height: 280px;
+    height: 270px;
+    /* background-color: #ffffff; */
+}
+.shimmer-container{
+    display: flex;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+.shimmer-card{
+    border-radius: 15px;
+    width:200px;
+    height: 240px;
+    margin: 20px;
+    background-color: #F0F0F5;
 }
 
 .res-card:hover{
-    border: 1px solid black;
+    transform: scale(0.93);
     cursor: pointer;
 }
 
 .res-logo{
-   width: 100%;
+   width: 200px;
+   border-radius: 15px;
    height: 150px;
-   border-radius: 50%;
 }
+.res-details{
+    padding-left: 10px;
+}
+
+a,
+:link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.res-details h3{
+    margin: 0px;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Basis Grotesque Pro";
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: -0.3px;
+    color: rgba(3, 3, 3, 0.842);
+    overflow: hidden;
+    width: 100%;
+    display: -webkit-box;
+    overflow-wrap: break-word;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    
+}
+.res-details h5{
+    -webkit-font-smoothing: antialiased;
+    font-family: "Basis Grotesque Pro";
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 19px;
+    letter-spacing: -0.3px;
+    color: rgba(2, 6, 12, 0.595);
+    overflow: hidden;
+    width: 100%;
+    display: -webkit-box;
+    overflow-wrap: break-word;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    margin: 5px;
+}
+
+.res-details span{
+    -webkit-font-smoothing: antialiased;
+    font-family: "Basis Grotesque Pro";
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: -0.3px;
+    color: rgba(3, 3, 3, 0.842);
+    margin: 5px;
+}
+
 
 .res-container{
     display: flex;
@@ -132,4 +203,209 @@
 
 .footer-section > ul > li{
     list-style: none;
+}
+
+.menu h1{
+    padding-top: 16px;
+    font-size: 1.33rem;
+    font-weight: 700;
+    color: #282c3f;
+    margin-bottom: 8px;
+    text-transform: capitalize;
+    font-size: large;
+}
+.menu-details{
+    /* height: 400px; */
+    width: 500px;
+    margin-left: 328px;
+}
+.menu{
+    font-family: ProximaNova,arial,Helvetica Neue,sans-serif;
+    margin-left: -530px;
+    margin-top: 70px;
+    /* height: 393px; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.menu span{
+    font-size: .93rem;
+    color: #404244;
+    font-size: small;
+    line-height: 1.5em;
+}
+
+.menu-details .f-1-2 .RestaurantRatings_avgRating {
+    color: #3d9b6d;
+    font-weight: 900;
+    margin-bottom: 10px;
+    /* border-bottom: 1px solid #e9e9eb; */
+}
+.menu-details ul li{
+    list-style: none;
+}
+.menu-details .f-1{
+    display: flex;
+    justify-content: space-between;
+}
+.menu-details .f-1-2 .RestaurantRatings_Rating{
+    font-weight: 600;
+    border-top: 1px solid #e9e9eb;
+    padding-top: 3px;
+    color: #9c9da1;
+    font-size: small;
+}
+.menu-details h4{
+    margin: 20px 0;
+}
+.menu-details ul li{
+    margin-top: 10px;
+}
+.menu-details .f-1 .p-1 p{
+    color: #2022248a;
+    font-size: .75rem;
+    margin-bottom: 4px;
+}
+
+.menu-details .f-1-2{
+    border: 1px solid #e9e9eb;
+    box-shadow: 0 1px 5px #f9f9f9;
+    border-radius: 6px;
+    text-align: center;
+    padding: 8px;
+    max-width: 100px;
+    float: right;
+}
+
+.icon-star{
+    color: #3d9b6d;
+    margin: 0 3px;
+}
+
+.line{
+    border-bottom: 0.5px solid #d3d3d3;
+    height: 0.5px;
+    margin: 20px 0;
+}
+.menu-details ul li .i-1{
+    display: flex;
+    justify-content: space-between;
+}
+.menu-details  .item-logo{
+    height: 95px;
+    width: 117px;
+    border-radius: 6px 
+}
+.RestaurantHeader_dottedSeparator{
+    border: none;
+    border-bottom: 1px dashed #d3d3d3;
+    margin-top: 14px;
+}
+
+.about-info{
+    margin-top: 50px;
+    height: 500px;
+    background-color: #F5851F;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    font-size: 26px;
+}
+.about-info h3{
+    line-height: 42px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    padding: 50px;
+}
+.about-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    font-family: 'Montserrat', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+.about-2 h1{
+    font-size: 2.9em;
+    
+    font-weight: 600;
+    color:  rgb(44, 44, 44);
+    margin-bottom: 50px;
+}
+
+.about-2 p{
+    font-size: 16.8px;
+    padding: 0 300px;
+    text-align: center;
+}
+.about-3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color: white;
+    font-size: 20px;
+}
+.about-3 h3{
+    font-weight: 500;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+.about-3 {
+    text-align: center;
+}
+.a-left{
+    height: 400px;
+    background-color: #94499C;
+    text-align:left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 35px 0 25px;
+
+}
+.a-right{
+    height: 400px;
+    background-color: #F5851F;
+    text-align:right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 25px 0 35px;
+}
+.about-3 p{
+    font-size: medium;
+}
+.help-info{
+    border: 1px solid blue;
+    margin-top: 30px;
+    background: white;
+    padding: 80px;
+    
+}
+.help-info h2{
+    font-family: ProximaNova, arial, "Helvetica Neue", sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+}
+.help-support h1{
+    font-family: ProximaNova, arial, "Helvetica Neue", sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+}
+.help-support{
+    padding: 90px 0 0 80px;
+    color: white;
+}
+.help-1{
+    background: #37718E;
+    margin-top: 40px;
+    padding: 0 20px;
+}
+.onlineStatus{
+    height: 150px;
+    margin-top: 100px;
 }

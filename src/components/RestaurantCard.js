@@ -1,11 +1,11 @@
 import { CDN_URL } from "../utils/constants";
-import resList from "../utils/mockData";
+// import resList from "../utils/mockData";
 
 const RestaurantCard = (props) => {
   const { resData } = props;
-  const { cloudinaryImageId, name, cuisine, rating, deliveryTime, cost } = resData?.data;
+  const { cloudinaryImageId, name, cuisines, avgRating, costForTwo, sla } = resData?.info;
   const styleCard = {
-    backgroundColor: '#F0F0F5',
+    backgroundColor: '#ffffff',
   };
 
   return (
@@ -19,12 +19,12 @@ const RestaurantCard = (props) => {
       </div>
       <div className="res-details">
       <h3>{name}</h3>
-      {cuisine && cuisine.length > 0 && (
-        <h4>{cuisine.join(', ')}</h4>
+      <span>{avgRating} star  </span>
+      <span>{sla.slaString}</span>
+      {cuisines && cuisines.length > 0 && (
+        <h5>{cuisines.join(', ')}</h5>
       )}
-      <h4>{rating} star</h4>
-      <h4>{deliveryTime}</h4>
-      <h4>{cost}</h4>
+      <span>{costForTwo}</span>
       </div>
     </div>
   );
